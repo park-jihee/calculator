@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{text-align: center; font-weight: bold; font-size: 18px;} 	
+		input{
+			background-color: #E0E0E0;
+			width: 215px; height: 40px;
+			margin-bottom: 5px;
+		}
+		.white, .gray{
+			width: 50px; height: 50px;
+		}
+		.zero, .cls_btn, .result_btn{
+			width: 108px; height: 50px;
+		}
+		.gray, .cls_btn, .result_btn{
+			background-color: gray;
+		}
+		table{
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<form name="cal">
+	<table>
+		<caption>계산기</caption>
+		<tr>
+			<td colspan="4"><input type="text" name="result"></td>
+		</tr>
+		<tr>
+			<td><input type="button" class="white" value="7"></td>
+			<td><input type="button" class="white" value="8"></td>
+			<td><input type="button" class="white" value="9"></td>
+			<td><input type="button" class="gray" value="+"></td>
+		</tr>
+		<tr>
+			<td><input type="button" class="white" value="4"></td>
+			<td><input type="button" class="white" value="5"></td>
+			<td><input type="button" class="white" value="6"></td>
+			<td><input type="button" class="gray" value="-"></td>
+		</tr>
+		<tr>
+			<td><input type="button" class="white" value="1"></td>
+			<td><input type="button" class="white" value="2"></td>
+			<td><input type="button" class="white" value="3"></td>
+			<td><input type="button" class="gray" value="*"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="button" class="zero" value="0"></td>
+			<td><input type="button" class="gray" value="%"></td>
+			<td><input type="button" class="gray" value="/"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="button" class="cls_btn" value="clear"></td>
+			<td colspan="2"><input type="button" class="result_btn" value="="></td>
+		</tr>
+	</table>
+	</form>
+</body>
+<script src="js/app.js"></script>
+</html> 
